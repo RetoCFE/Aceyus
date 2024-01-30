@@ -1,0 +1,211 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Estilo para las tarjetas (clase .card-custom) */
+.card-custom {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: -100px; /* Efecto de superposición hacia arriba */
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+
+  /* Establece la posición absoluta para que puedas controlar la posición */
+  position: absolute;
+  top: 50px; /* Ajusta la posición superior según tu preferencia */
+  left: 50px; /* Ajusta la posición izquierda según tu preferencia */
+}
+
+.card-custom .card-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Estilo para los contenedores de gráficas (clase .chart-container) */
+.chart-container {
+  width: 100%; /* Ajusta el ancho según tus necesidades */
+  height: auto; /* Ajusta la altura según tus necesidades */
+}
+
+/* Estilo para el fondo de las tarjetas (clase .bg-card-color-card) */
+.bg-card-color-card {
+  background-color: #3498db; /* Color de fondo de la tarjeta */
+  color: #fff; /* Color del texto dentro de la tarjeta */
+}
+
+
+.table-listener {
+  width: 50%;
+}
+
+.custom-bg-col{
+  background-color:  #60688F;
+}
+
+.bg-footer-color{
+  background-color:#2C2E38;
+}
+
+
+.bg-card-color-card{
+  background-color:#B3BEF5;
+}
+
+/*TITULO*/
+.box {
+  display: flex;
+  width: 300px;
+}
+
+.box .inner {
+  width: 300px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 2em;
+  font-family: sans-serif;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #505160; /* Color de fondo */
+  color: #68829E; /* Color del texto */
+}
+
+.box .inner:first-child {
+  background-color: #7DA3A1; /* Color de fondo */
+  color: #324851; /* Color del texto */
+  transform-origin: right;
+  transform: perspective(50px) rotateY(-15deg);
+}
+
+.box .inner:last-child {
+  background-color: #66A5AD; /* Color de fondo */
+  color: #C4DFE6; /* Color del texto */
+  transform-origin: left;
+  transform: perspective(50px) rotateY(15deg);
+}
+
+.box .inner span {
+  position: absolute;
+  animation: marquee 2.5s linear infinite;
+}
+
+.box .inner:first-child span {
+  animation-delay: 1.25s;
+  left: -100%;
+}
+
+
+@keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
+}
+
+
+
+.navbar{
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #c4ccde;
+}
+
+.SliderBar{
+  width: 14rem;
+  height: calc(100vh - 52px);
+  border-right: 1px solid gray;
+}
+
+.SliderBar ul{
+  list-style: none;
+  padding: 1rem 2rem;
+}
+
+.SliderBar ul li{
+  margin-bottom: 1rem;
+}
+
+.SliderBar ul li a{
+  text-decoration: none;
+}
+
+.SliderBar ul li a:active{
+  background-color: #e7e9eb !important;
+  border-radius: .5rem;
+}
+
+.SliderBar ul li a.active{
+  background-color: #e7e9eb !important;
+  border-radius: .5rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.SliderBar {
+  height: 100vh; /* Establece la altura de la barra lateral al 100% de la altura de la ventana (viewport height) */
+  overflow-y: auto; /* Añade desplazamiento vertical si el contenido es más largo que la altura de la barra lateral */
+}
+
+
+
+.wrapper {
+  display: flex;
+}
+
+.container {
+  flex: 1;
+  margin-right: 10px; /* Ajusta el margen entre los contenedores */
+}
+
+
+
+.cuadradoExterno{
+  width: 230px;
+  height: 230px;
+  background: #324851;
+  position: relative;
+  border-radius: 10px;
+}
+
+.cuadradoInterno{
+  width: 220px;
+  height: 225px;
+  background: #3498db;
+  border-radius: 10px;
+  position: absolute;
+  left: 15px;
+  top: 10px;
+}
+
+.cuadradoExterno-lg{
+  width: 400px;
+  height: 230px;
+  background: #324851;
+  position: relative;
+  border-radius: 10px;
+}
+
+.cuadradoInterno-lg{
+  width: 400px;
+  height: 225px;
+  background: #f1f1f1;
+  border-radius: 10px;
+  border-color: #2C2E38;
+  position: absolute;
+  left: 15px;
+  top: 10px;
+}
