@@ -1,5 +1,0 @@
-Get-LocalUser
-
-Remove-LocalUser -Name NombreDeUsuario
-
-
